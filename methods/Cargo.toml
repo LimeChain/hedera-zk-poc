@@ -13,12 +13,26 @@ risc0-build-ethereum = { workspace = true }
 risc0-zkp = { workspace = true }
 
 [dev-dependencies]
-alloy-primitives = { workspace = true }
-alloy-sol-types = { workspace = true }
-bls-signatures = "0.15.0"
+#anyhow = { workspace = true }
+#bincode = { workspace = true }
+#bonsai-sdk = { workspace = true }
+#clap = { version = "4.5", features = ["derive", "env"] }
+#ethers = { version = "2.0" }
+#hex = { version = "0.4" }
+
+#alloy-primitives = { workspace = true }
+#alloy-sol-types = { workspace = true }
+
 sha2 = "0.10"
 serde = { version = "1.0", features = ["derive"] }
+#serde_json = "1.0"
 
-risc0-zkvm = { workspace = true, features = ["client", "prove"] }
-risc0-groth16 = "0.21.0"
+k256 = { version = "0.13", features = ["serde"] }
+rand_core = "0.6.4"
+
+risc0-zkvm = { workspace = true, features = ["client"] }
+#risc0-ethereum-contracts = { workspace = true }
+
+#risc0-groth16 = "0.21.0"
 tracing = "0.1"
+tracing-subscriber = "0.3"
